@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vfhv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0025-tenant/tkrw-pr712-0075-0025-app/devfile-sample-vfhv@sha256:2003849a64ab48add2ac5d6b0edaa191dac8d063c6c5987ec36d5286c0ad3203
+        name: my-nodejs
+        resources: {}
+status: {}
